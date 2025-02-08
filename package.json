@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/FranceSenpai/HW12/issues"
   },
-  "homepage": "https://github.com/FranceSenpai/HW12#readme"
+  "homepage": "https://github.com/FranceSenpai/HW12#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
