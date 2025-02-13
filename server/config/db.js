@@ -1,18 +1,19 @@
-const mysql = require("mysql");
-const dotenv = require("dotenv");
+const mysql = require('mysql2');
 
-dotenv.config();
-
-const dbConfig = process.env.DATABASE_URL;
-
-const db = mysql.createConnection(dbConfig);
+const db = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'Buhh',
+    database: 'restaurant',
+    port: 3306, // Ensure MySQL is running on this port
+});
 
 db.connect((err) => {
     if (err) {
-        console.error("❌ Database connection failed:", err);
-        process.exit(1);
+        console.error("Database connection failed:", err);
+        return;
     }
-    console.log("✅ Connected to Heroku Database");
+    console.log("✅ Connected to MySQL Database!");
 });
 
 module.exports = db;
