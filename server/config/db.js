@@ -3,7 +3,7 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-// Check if Heroku DATABASE_URL is available, otherwise fallback to localhost
+// MAKE SURE THIS IS MATCHING
 const dbConfig = process.env.DATABASE_URL
   ? process.env.DATABASE_URL
   : {
@@ -14,10 +14,9 @@ const dbConfig = process.env.DATABASE_URL
       port: 3306,
     };
 
-// If the database URL is set (i.e., on Heroku), parse it to extract the correct values
 let connection;
 if (process.env.DATABASE_URL) {
-  const dbUrl = new URL(dbConfig); // Parse the DATABASE_URL
+  const dbUrl = new URL(dbConfig); 
   connection = mysql.createConnection({
     host: dbUrl.hostname,
     user: dbUrl.username,
