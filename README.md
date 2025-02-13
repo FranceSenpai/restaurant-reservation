@@ -113,4 +113,9 @@ CREATE TABLE users (
    on the server file npm start 
     
 
+Once the backend is running locally 
+this 2 websites become active 
+everything is matching IE the connection to the sql 
 
+https://puertoricosteakhouse.netlify.app/
+https://puertoricosteakhousemng.netlify.app/
