@@ -1,2 +1,3 @@
-web: node server.js
+web: cd server && node server.js
+
 
