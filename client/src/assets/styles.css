@@ -1,0 +1,44 @@
+﻿/* ✅ Set Background Image */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/RestaurantBackground.jpg"); /* ✅ Ensure correct path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white; /* ✅ Text is readable */
+}
+
+/* ✅ Center Content and Adjust Layout */
+.home-container {
+    max-width: 900px;
+    margin: 50px auto; /* ✅ Center the content */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* ✅ Slight dark overlay */
+    border-radius: 10px;
+}
+
+/* ✅ Center and Resize Steak Image */
+.steak-image {
+    width: 80%; /* ✅ Adjust width */
+    max-width: 500px; /* ✅ Limit max size */
+    display: block; /* ✅ Make it a block element */
+    margin: 20px auto; /* ✅ Center the image */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Improve Text Readability */
+h1.title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffd700; /* ✅ Golden color */
+}
+
+p.description {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+}
