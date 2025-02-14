@@ -27,12 +27,10 @@ db.connect((err) => {
 });
 
 const app = express();
-const corsOptions = {
-  origin: 'https://puertoricosteakhouse.netlify.app',  
-};
+
 
 // Middleware setup
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 
 // Routes
